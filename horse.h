@@ -7,15 +7,15 @@
 
 class Horse {
 	private:
-	  std::string lane;
 	  int pos;
+	  int ID;
+	  int trackLength;
 	public:
 	  Horse();
-	  void setLane(std::string lane);
-	  std::string getLane();
+	  void init(int id, int trackLength);
+	  void advance();
+	  void printLane();
 	  bool isWinner();
-	  void setPos(int coin);
-	  int getPos();
-} // end class def
+}; // end class def
 
 #endif
