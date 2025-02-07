@@ -8,13 +8,13 @@
 class Horse {
 	private:
 	  int pos;
-	  int ID;
+	  int id;
 	  int trackLength;
 	public:
 	  Horse();
 	  void init(int id, int trackLength);
 	  void advance();
-	  void printLane();
+	  int printLane();
 	  bool isWinner();
 }; // end class def
 
