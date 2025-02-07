@@ -30,7 +30,7 @@ void Horse::printLane(){
 	std::string track[Horse::trackLength];
 	for (int i = 0; i < Horse::trackLength; i++){
 		if (i == Horse::pos){
-			std::string test = std::to_string(Horse::pos);
+			std::string test = std::to_string(Horse::id);
 			track[i] = test;
 			std::cout << track[i];
 		} // end if
@@ -42,4 +42,7 @@ void Horse::printLane(){
 	std::cout << std::endl;
 } // end printLane
 
-
+bool Horse::isWinner(){
+	return Horse::pos >= Horse::trackLength;
+	
+} // end isWinner
