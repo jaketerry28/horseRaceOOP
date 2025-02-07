@@ -1,24 +1,13 @@
 #include <iostream>
 #include "horse.h"
-//#include "race.h"
+#include "race.h"
 
 int main(){
 	Horse j;
 	std::cout << "Hi there !" << std::endl;
-	j.init(0, 14);
-
-	bool keepGoing = true;
-	while (keepGoing){
-		std::cout << "Press enter to continue..." << std::endl;
-		std::cin.get();
-
-		if (j.isWinner()){
-			keepGoing = false;
-		} // end if
-		else{
-			j.printLane();
-			j.advance();
-		} // end else
-	} // end while
+	for (int i = 0; i < horseNum; i++){
+		Horse i;
+		i.init(0, 14);	
+	} // end for
 	return(0);
 } // end main
